@@ -37,7 +37,7 @@ class Sistema:
      LDAP_USERNAME = '%s@DOMINIO' % username
      # your password
      LDAP_PASSWORD = password
-     base_dn = 'DC=KEEPERSBRASIL,DC=COM'
+     base_dn = 'DC=DOMINIO,DC=DOMINIO'
      ldap_filter = 'userPrincipalName=%s@DOMINIO' % username
      attrs = ['memberOf']
      if username == dados_user[1]:
